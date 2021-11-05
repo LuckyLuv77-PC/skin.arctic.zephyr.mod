@@ -106,7 +106,7 @@
                 <font>Tiny</font>
                 <align>left</align>
                 <label>Home.xml</label>
-                <visible>Window.IsVisible(Home.xml)</visible>
+                <visible>Window.IsVisible(home)</visible>
             </control>
             <control type="label">
                 <width>780</width>

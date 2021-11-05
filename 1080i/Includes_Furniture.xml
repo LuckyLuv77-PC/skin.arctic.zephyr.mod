@@ -2980,7 +2980,7 @@
         <value condition="Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">special://skin/extras/icons/settings.png</value>
         <value condition="Window.IsVisible(MyPlaylist.xml)">special://skin/extras/icons/playlist.png</value>
         <value condition="Window.IsVisible(FileManager.xml)">special://skin/extras/icons/database.png</value>
-        <value condition="Window.IsVisible(Home.xml)">special://skin/extras/icons/home.png</value>
+        <value condition="Window.IsVisible(home)">special://skin/extras/icons/home.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">special://skin/extras/icons/video-addons.png</value>
         <value>special://skin/extras/icons/artist.png</value>
     </variable>
@@ -3091,13 +3091,13 @@
             <include>Animation.FadeOut</include>
             <include>Animation.ClearLogo.FadeOut</include>
             <visible>Skin.HasSetting(furniture.logo)</visible>
-            <visible>![Window.IsVisible(Home.xml) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
-            <visible>![Window.IsVisible(Home.xml) + Skin.HasSetting(home.showclearlogo) + $EXP[HomeIsVertical] ]</visible>
-            <visible>![Window.IsVisible(Home.xml) + !Skin.HasSetting(home.showclearlogo) + $EXP[HomeIsVerticalMultiWidgets] ]</visible>
+            <visible>![Window.IsVisible(home) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
+            <visible>![Window.IsVisible(home) + Skin.HasSetting(home.showclearlogo) + $EXP[HomeIsVertical] ]</visible>
+            <visible>![Window.IsVisible(home) + !Skin.HasSetting(home.showclearlogo) + $EXP[HomeIsVerticalMultiWidgets] ]</visible>
             <visible>![Control.IsVisible(504) + Skin.HasSetting(504clearlogo)]</visible>
             <visible>![Control.IsVisible(509) + Skin.HasSetting(509clearlogo)]</visible>
             <visible>![Control.IsVisible(510) + Skin.HasSetting(ShowClearart510)]</visible>
-            <animation effect="slide" start="0" end="0,60" time="0" condition="$EXP[HomeIsModernMultiWidgets] + Window.IsVisible(Home.xml)">Conditional</animation>
+            <animation effect="slide" start="0" end="0,60" time="0" condition="$EXP[HomeIsModernMultiWidgets] + Window.IsVisible(home)">Conditional</animation>
             <centertop>120</centertop>
             <centerleft>50%</centerleft>
             <height>102</height>

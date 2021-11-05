@@ -1279,9 +1279,6 @@
         <value condition="Control.HasFocus(23) + Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml)">$ADDON[script.service.gto 30119]</value>
         <value condition="Control.HasFocus(13) + Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[21340]</value>
         <value condition="Control.HasFocus(10) + Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[24996]</value>
-        <value condition="Control.HasFocus(9001) + Window.IsVisible(Custom_MovieSets.xml)">$LOCALIZE[208]</value>
-        <value condition="Control.HasFocus(9005) + Window.IsVisible(Custom_MovieSets.xml)">$LOCALIZE[31225]</value>
-        <value condition="Control.HasFocus(9007) + Window.IsVisible(Custom_MovieSets.xml)">$LOCALIZE[16106]</value>
         <value condition="Control.HasFocus(9001) + Window.IsVisible(script-embuary-person.xml)">$LOCALIZE[39123]</value>
         <value condition="Control.HasFocus(9002) + Window.IsVisible(script-embuary-person.xml)">$LOCALIZE[31187] $INFO[Container(10051).ListItem.Label]</value>
         <value condition="Control.HasFocus(9119) + Window.IsVisible(script-embuary-person.xml)">$LOCALIZE[31183] $INFO[Container(10051).ListItem.Label]</value>
@@ -1773,7 +1770,7 @@
     </variable>
 
     <variable name="LabelGenreHomeSmallWidget">
-        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.TvShowTitle) + Window.IsVisible(Home.xml)">$INFO[ListItem.TvShowTitle]</value>
+        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.TvShowTitle) + Window.IsVisible(home)">$INFO[ListItem.TvShowTitle]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode)">$VAR[LabelDurationTimeCheck]</value>
         <value condition="String.StartsWith(ListItem.FolderPath,pvr://) + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
