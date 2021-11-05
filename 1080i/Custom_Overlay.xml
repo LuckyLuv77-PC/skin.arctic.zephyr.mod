@@ -178,7 +178,7 @@
                 <font>Tiny</font>
                 <align>left</align>
                 <label>Custom_Blur.xml</label>
-                <visible>Window.IsVisible(Custom_Blur.xml)</visible>
+                <visible>Window.IsVisible(1297)</visible>
             </control>
             <control type="label">
                 <width>780</width>
@@ -652,28 +652,28 @@
                 <font>Tiny</font>
                 <textcolor>FFFFFFFF</textcolor>
                 <label fallback="19055">Background Helper Status: active</label>
-                <visible>Window.IsVisible(Custom_AutoTrailer_Background_Helper.xml)</visible>
+                <visible>Window.IsVisible(1194)</visible>
                 <visible>$EXP[AutoTrailerDebugging]</visible>
             </control>
             <control type="label">
                 <font>Tiny</font>
                 <textcolor>FFFFFFFF</textcolor>
                 <label fallback="19055">Background Helper Status: pending</label>
-                <visible>!Window.IsVisible(Custom_AutoTrailer_Background_Helper.xml)</visible>
+                <visible>!Window.IsVisible(1194)</visible>
                 <visible>$EXP[AutoTrailerDebugging]</visible>
             </control>                
             <control type="label">
                 <font>Tiny</font>
                 <textcolor>FFFFFFFF</textcolor>
                 <label fallback="19055">Autostart Helper Status: active</label>
-                <visible>Window.IsVisible(Custom_AutoTrailer_Start_Helper.xml)</visible>
+                <visible>Window.IsVisible(1195)</visible>
                 <visible>$EXP[AutoTrailerDebugging]</visible>
             </control>
             <control type="label">
                 <font>Tiny</font>
                 <textcolor>FFFFFFFF</textcolor>
                 <label fallback="19055">Autostart Helper Status: pending</label>
-                <visible>!Window.IsVisible(Custom_AutoTrailer_Start_Helper.xml)</visible>
+                <visible>!Window.IsVisible(1195)</visible>
                 <visible>$EXP[AutoTrailerDebugging]</visible>
             </control>
             <control type="label">
