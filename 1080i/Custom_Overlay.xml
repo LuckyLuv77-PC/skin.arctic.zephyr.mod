@@ -703,6 +703,30 @@
                 <label fallback="19055">$LOCALIZE[20410] $LOCALIZE[126]: pending</label>
                 <visible>!$EXP[TrailerIsReady] + !$EXP[TrailerIsPlaying] + !$EXP[TrailerWaitingForPlayer]</visible>
                 <visible>$EXP[AutoTrailerDebugging]</visible>
+            </control>            
+            <control type="label">
+                <font>Tiny</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <label fallback="19055">Effects: enabled</label>
+                <visible>Skin.HasSetting(DebugInfo.extended) + Skin.HasSetting(EnableEffects)</visible>
+            </control>
+            <control type="label">
+                <font>Tiny</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <label fallback="19055">ColorBox: enabled</label>
+                <visible>Skin.HasSetting(DebugInfo.extended) + System.AddonIsEnabled(script.litebox)</visible>
+            </control>
+            <control type="label">
+                <font>Tiny</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <label fallback="19055">ImageFilterFIVE: $INFO[Window(home).Property(ImageFilterFIVE)]</label>
+                <visible>Skin.HasSetting(DebugInfo.extended)</visible>
+            </control>
+            <control type="label">
+                <font>Tiny</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <label fallback="19055">GlobalFanart: $VAR[GlobalFanart]</label>
+                <visible>Skin.HasSetting(DebugInfo.extended)</visible>
             </control>
         </control>
     </controls>
